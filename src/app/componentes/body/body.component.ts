@@ -8,7 +8,10 @@ import { Component } from '@angular/core';
 export class BodyComponent {
   dataArray:any=[]=[];
   agregarDatos(nombre:string, apellido:string, edad:string){
-    this.dataArray.push(String(nombre),String(apellido),String(edad))
+    //this.dataArray.push(nom:nombre,String(apellido),String(edad));
+    this.dataArray.push({
+      "nom": nombre, "ape":apellido,"edad":edad
+    })
     console.log(this.dataArray);
   }
 }

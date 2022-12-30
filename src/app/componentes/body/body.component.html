@@ -16,4 +16,28 @@
             <button class="btn btn-primary" (click)="agregarDatos(nombre.value, apellido.value, edad.value)">Agregar datos</button>
           </form>
     </div>
+    <div>
+        <div class="table-responsive">
+            <table class="table">
+                <thead class="bg-info">
+                    <tr>
+                        <th scope="col">N°</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Apellidos</th>
+                        <th scope="col">Edad</th>
+                        <th scope="col">Condición</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="" *ngFor="let dato of dataArray ; index as i" >
+                        <td scope="row">{{i+1}}</td>
+                        <td scope="row">{{dato.nom}}</td>
+                        <td scope="row">{{dato.ape}}</td>
+                        <td scope="row">{{dato.edad}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
 </div>
