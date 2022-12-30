@@ -1,45 +1,7 @@
-<div class="container mt-5 ">
-    <div>
-        <form>
-            <div class="mb-3">
-              <label for="nombre" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="nombre" #nombre>
-            </div>
-            <div class="mb-3">
-                <label for="apellidos" class="form-label">Apellidos</label>
-                <input type="text" class="form-control" id="apellidos" #apellido>
-            </div>
-            <div class="mb-3">
-                <label for="edad" class="form-label">Edad</label>
-                <input type="number" class="form-control" id="edad" #edad>
-            </div>
-            <button class="btn btn-primary" (click)="agregarDatos(nombre.value, apellido.value, edad.value)">Agregar datos</button>
-          </form>
+<main>
+    <app-formulario (onEnviarDatos)="listaArrayPersonas=$event"></app-formulario>
+    <div class="py-5">
+        <app-tabla [dataArraytabla]="listaArrayPersonas" ></app-tabla>
     </div>
-    <div>
-        <div class="table-responsive">
-            <table class="table">
-                <thead class="bg-info">
-                    <tr>
-                        <th scope="col">N°</th>
-                        <th scope="col">Nombre</th>
-                        <th scope="col">Apellidos</th>
-                        <th scope="col">Edad</th>
-                        <th scope="col">Condición</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="" *ngFor="let dato of dataArray ; index as i" >
-                        <td scope="row">{{i+1}}</td>
-                        <td scope="row">{{dato.nom}}</td>
-                        <td scope="row">{{dato.ape}}</td>
-                        <td scope="row">{{dato.edad}}</td>
-                        <td scope="row" *ngIf="dato.edad>=18">Mayor de Edad</td>
-                        <td scope="row" *ngIf="dato.edad<18">Menor de Edad</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        
-    </div>
-</div>
+   
+</main>

@@ -4,6 +4,8 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { BodyComponent } from './body/body.component';
 import { FormsModule } from '@angular/forms';
+import { TablaComponent } from './body/tabla/tabla.component';
+import { FormularioComponent } from './body/formulario/formulario.component';
 
 
 
@@ -11,7 +13,9 @@ import { FormsModule } from '@angular/forms';
   declarations: [
     HeaderComponent,
     FooterComponent,
-    BodyComponent
+    BodyComponent,
+    TablaComponent,
+    FormularioComponent
   ],
   imports: [
     CommonModule,

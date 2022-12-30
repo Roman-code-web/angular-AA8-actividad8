@@ -1,0 +1,27 @@
+<div class="mt-5 mb-5" *ngIf="dataArraytabla.length>0">
+    <div class="container">
+        <table class="table table-responsive">
+            <thead class="bg-primary bg-opacity-75 text-light text-center">
+                <tr>
+                    <th scope="col">N°</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Apellidos</th>
+                    <th scope="col">Edad</th>
+                    <th scope="col">Condición</th>
+                </tr>
+            </thead>
+            <tbody >
+                <tr class="border text-center" *ngFor="let dato of dataArraytabla ; index as i" >
+                    <td scope="row">{{i+1}}</td>
+                    <td scope="row">{{dato.nom}}</td>
+                    <td scope="row">{{dato.ape}}</td>
+                    <td scope="row">{{dato.edad}}</td>
+                    <td scope="row" *ngIf="dato.edad>=18">Mayor de Edad</td>
+                    <td scope="row" *ngIf="dato.edad<18">Menor de Edad</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+    
+    
