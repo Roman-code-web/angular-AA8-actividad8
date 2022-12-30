@@ -34,6 +34,8 @@
                         <td scope="row">{{dato.nom}}</td>
                         <td scope="row">{{dato.ape}}</td>
                         <td scope="row">{{dato.edad}}</td>
+                        <td scope="row" *ngIf="dato.edad>=18">Mayor de Edad</td>
+                        <td scope="row" *ngIf="dato.edad<=18">Menor de Edad</td>
                     </tr>
                 </tbody>
             </table>
