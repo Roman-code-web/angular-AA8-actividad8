@@ -4,26 +4,26 @@
                 <div class="mb-3">
                     <label for="nombre" class="form-label">Nombre</label>
                     <div class="input-group ">
-                        <span class="input-group-text bg-primary" id="basic-addon1"><i class="fa-solid fa-user text-light  fs-5 "></i></span>
-                        <input type="text" class="form-control" id="nombre" #nombre >
+                        <span class="input-group-text bg__color" id="basic-addon1"><i class="fa-solid fa-user text-light  fs-5 "></i></span>
+                        <input type="text" class="form-control  "  id="nombre" #nombre  >
                     </div>
                 </div>
                 <div class="mb-3">
                     <label for="apellidos" class="form-label">Apellidos</label>
                     <div class="input-group ">
-                        <span class="input-group-text bg-primary" id="basic-addon1"><i class="fa-solid fa-user text-light fs-5 "></i></span>
-                        <input type="text" class="form-control" id="apellidos" #apellido>
+                        <span class="input-group-text bg__color" id="basic-addon1"><i class="fa-solid fa-user text-light fs-5 "></i></span>
+                        <input type="text" class="form-control  "  id="apellidos" #apellido>
                     </div>
                 </div>
                 <div class="mb-3">
                     <label for="edad" class="form-label">Edad</label>
                     <div class="input-group ">
-                        <span class="input-group-text bg-primary" id="basic-addon1"><i class="fa-regular fa-calendar-minus text-light fs-5 "></i></span>
-                        <input type="number" class="form-control" id="edad" #edad>
+                        <span class="input-group-text bg__color" id="basic-addon1"><i class="fa-regular fa-calendar-minus text-light fs-5 "></i></span>
+                        <input type="number" class="form-control  "  id="edad" #edad>
                     </div>
                 </div>
                 <div class="mb-3 mt-3">
-                    <button class="btn btn-success w-100" (click)="agregarDatos(nombre.value, apellido.value, edad.value)">Agregar datos</button>
+                    <button class="btn bg__color text-light fw-bold w-100" [disabled]="disabled" (click)="agregarDatos(nombre.value, apellido.value, edad.value)">Agregar datos</button>
                 </div>
             </form>
     </div>
