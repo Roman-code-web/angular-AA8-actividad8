@@ -1,0 +1,54 @@
+#formulario p{
+    font-size: 0.8rem;
+    padding-bottom: 0px !important;
+    margin-bottom: 0px !important;
+}
+#formulario label{
+    font-size: 0.9rem;
+}
+.posicion{
+    position: relative;
+    padding: 8px;
+    background-color: rgb(206, 206, 206);
+    display: none;
+}
+.color-bg{
+    background-color: #006fe6 !important;
+    border-style: none !important;
+    padding: 1px 10px!important;
+}
+.color{
+    color: #007bff !important;
+}
+.opacidad{
+    opacity: 0;
+}
+.oculto{
+    display: none !important;
+}
+.mostrar{
+    display: block!important;
+}
+.correcto{
+    color: rgb(18, 158, 18);
+    display: block;
+}
+.incorrecto{
+    color: rgb(204, 25, 25);
+    display: block;
+}
+.input-correcto{
+    border: 2px solid rgb(18, 158, 18) !important;
+}
+.input-incorrecto{
+    border: 2px solid rgb(204, 25, 25) !important;
+}
+.p-color{
+    background-color: #F3ECB0 !important;
+    color: rgb(30, 30, 30) !important;
+}
+.img-tamaño{
+    width: 100px;
+    
+}
+
